@@ -1,12 +1,20 @@
 # Expo Router Example
 
+
+## Instalar proyecto
+```sh
+npm install
+```
+
+En caso de mostrar un error de tipo Fetch, ejecutar el siguiente comando
+```sh
+npm install -g expo-cli
+npm install
+```
+
+
 Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
 
-## 🚀 How to use
-
-```sh
-npx create-react-native-app -t with-router
-```
 
 ## 📝 Notes
 
