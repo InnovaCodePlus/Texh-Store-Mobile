@@ -12,7 +12,6 @@ export const useFetch = ( url ) => {
 
         try {      
             const { data } = await techStoreDb.get(`${ url }`);
-            console.log(data);
             setData(data);
             setIsLoading( false );
 
