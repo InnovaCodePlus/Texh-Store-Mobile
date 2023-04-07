@@ -1,6 +1,7 @@
 import React from 'react'
 import { Stack, useSearchParams } from 'expo-router'
 import { SafeAreaView, ScrollView, View } from 'react-native'
+import { ProductList } from '../../components';
 
 const CategoryScreen = () => {
 
@@ -21,7 +22,7 @@ const CategoryScreen = () => {
 
             <ScrollView>
                 <View style={{ flex: 1, padding: 16 }}>
-                    
+                    <ProductList url={ name }/>
 
                 </View>
             </ScrollView>

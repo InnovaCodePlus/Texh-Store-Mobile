@@ -4,9 +4,9 @@ import { useFetch } from "../hooks/useFetch"
 import { ProductCard } from "./"
 
 
-export const ProductList = () => {
+export const ProductList = ({ url = '' }) => {
 
-    const { data: products, isLoading, error } = useFetch('/products')
+    const { data: products, isLoading } = useFetch(`/products${ url.trim() == '' ? '' : `?category=${ url }` }`)
 
     
     if( isLoading ){
@@ -21,7 +21,10 @@ export const ProductList = () => {
         <View>
             {
                 products.map((product) => (
-                    <ProductCard product={ product }/>
+                    <ProductCard 
+                        key={ product.id } 
+                        product={ product }
+                    />
                 ))
             }
         </View>

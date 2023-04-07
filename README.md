@@ -1,6 +1,5 @@
 # Expo Router Example
 
-
 ## Instalar proyecto
 ```sh
 npm install
@@ -14,6 +13,28 @@ npm install
 
 
 Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
+
+## Generar Aplicacion
+Aca pdoras encontrar como generar la aplicacion con EAS
+
+- Registrarse en Expo
+- Instalar eas-cli
+```sh
+npm install -g eas-cli
+```
+- Iniciar sesion con Expo desde eas-cli
+ ```sh
+eas login
+```
+
+- Generar la configuracion de construccion
+ ```sh
+eas build:configure
+```
+- Crear la aplicacion desde Expo
+ ```sh
+eas build -p <plataformo> --profile preview
+```
 
 
 ## 📝 Notes

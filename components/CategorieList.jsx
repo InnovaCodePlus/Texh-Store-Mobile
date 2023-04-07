@@ -26,6 +26,7 @@ export const CategorieList = () => {
                 horizontal
                 contentContainerStyle={{ columnGap: 12, marginBottom: 30 }}
                 showsHorizontalScrollIndicator={ false }
+                keyExtractor={( item ) => (item.id)}
             />
         </View>
     )

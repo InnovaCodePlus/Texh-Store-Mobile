@@ -5,6 +5,14 @@
       "bundler": "metro"
     },
     "name": "tech-store-app",
-    "slug": "tech-store-app"
+    "slug": "tech-store-app",
+    "extra": {
+      "eas": {
+        "projectId": "2c88237e-184f-485c-b8f7-7eb325cb3bdf"
+      }
+    },
+    "android": {
+      "package": "com.mattiadu944.techstoreapp"
+    }
   }
 }

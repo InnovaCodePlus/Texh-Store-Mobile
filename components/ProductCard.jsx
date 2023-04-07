@@ -1,10 +1,20 @@
-import React from 'react'
+import { useRouter } from 'expo-router'
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 export const ProductCard = ({ product }) => {
+
+    
+    const router = useRouter()
+    
+
+    const handleNavigation = ( id ) => {
+        router.push(`/product/${ id }`);
+    }
+
     return (
         <TouchableOpacity
             activeOpacity={0.8}
+            onPress={() => handleNavigation(product.id)}
         >
             <View style={ styles.container }>
                 <Image
